@@ -1,5 +1,4 @@
 class LocalStorageHelper {    
-
     add = function(storageKey, value) {
         var allItems = this._getFromStorage(storageKey);
 
@@ -8,8 +7,6 @@ class LocalStorageHelper {
         allItems.push(value);
         this._setToStorage(storageKey, allItems);
     }
-
-
 
     update = function(storageKey, value) {
         var allItems = this._getFromStorage(storageKey);

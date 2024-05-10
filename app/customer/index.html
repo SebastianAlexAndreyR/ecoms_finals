@@ -5,16 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eCommerce Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <div id="products"></div>
-
-    <a href="../customer/add-product.html">Add Product</a>
-
-
-   <script src="../../data/local-storage-helper.js"></script>
-   <script src="../customer/index.js"></script>
 <body>
+
+    
+    <nav>
+        <a href="#">Home</a> 
+        <a href="../customer/cart.html">Cart</a>
+        <a href="javascript:void(0)" onclick="onLogOut()">Logout</a>
+    </nav>
+     <input type="text" id="searchInput" onkeyup="searchProduct()" placeholder="Search Product...">
+    <div class="container">
+       
+        <div id="products"></div>
+    </div>
     
 </body>
+<script src="../../helpers/login-helper.js"></script>
+<script src="../../data/local-storage-helper.js"></script>
+<script src="../customer/index.js"></script>
+
 
 </html>
