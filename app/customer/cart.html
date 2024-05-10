@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="../customer/index.html">Back to Shop</a>
+    </nav>
+    <input type="text" id="searchInput" onkeyup="searchProduct()" placeholder="Search Product...">
+    <div class="container">
+        <div id="products"></div>
+
+        <div id="cart">
+            <h2>Cart Items</h2>
+            <ul id="cartItems"></ul>
+
+            <h2>Checked out Items</h2>
+            <ul id="checkedOutItems"></ul>
+        </div>
+    </div>
+
+    <script src="../../helpers/login-helper.js"></script>
+    <script src="../../data/local-storage-helper.js"></script>
+    <script src="../customer/cart.js"></script>
+</body>
+
+</html>

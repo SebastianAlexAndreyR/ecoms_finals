@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Website</title>
+    <link rel="stylesheet" href="update.css">
+</head>
+
+<body>
+    <nav>
+        <a href="../seller/index.html">Back to Admin</a>
+    </nav>
+    <div class="container">
+        Name: <input class="inputs" id="name" type="text">
+        <br>
+        <br>
+        Price: <input class="inputs" id="price" type="number">
+        <br>
+        <br>
+        <div>
+            Image: <input class="inputs" id="uploadButton" type="file" onchange="uploadImage(event)">
+            <img id="imgholder" height="200px" hidden>
+        </div>
+        <br>
+        <br>
+        <div>
+            <button onclick="onUpdate()">Update</button>
+        </div>
+    </div>
+
+
+    <script src="../../data/local-storage-helper.js"></script>
+    <script src="../seller/update-product.js"></script>
+
+
+</body>
+
+</html>
